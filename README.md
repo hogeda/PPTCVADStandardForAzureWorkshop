@@ -2,7 +2,7 @@
 ## 基本環境構築
 - 任意のリソースグループを作成します。
 -  次のボタンをクリックしてテンプレートよりデプロイを行います。このテンプレートではADサーバー用のVMを構築します。  
-    [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhogeda%2FPPTWvdPoCEnvironment%2Fmain%2Fazuredeploy.json)
+    [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhogeda%2FPPTCVADStandardForAzureWorkshop%2Fmain%2Fazuredeploy.json)
 - デプロイが完了した後はVMの実行コマンド機能を用いて、ADDSの構成、ユーザー作成を行います。
 - パラメータは次の例を参考に入力してください。
 
