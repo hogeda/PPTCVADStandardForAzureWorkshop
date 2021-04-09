@@ -5,7 +5,7 @@
     [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhogeda%2FPPTWvdPoCEnvironment%2Fmain%2Fazuredeploy.json)
 - デプロイが完了した後はVMの実行コマンド機能を用いて、ADDSの構成、ユーザー作成を行います。
 - パラメータは次の例を参考に入力してください。
-- 
+
 | Parameter  | Sample    |
 | --- | --- |
 | virtualNetwork_name | [concat(resourceGroup().name,'-vnet')] |
