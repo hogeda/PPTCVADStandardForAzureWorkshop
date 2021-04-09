@@ -1,5 +1,5 @@
 [string]$domainName = 'cvad.lab'
-[string]$safeModeAdministratorPassword = 'SafeModeAdministratorPassword'
+[string]$safeModeAdministratorPassword = 'Citrix12345!'
 
 Install-WindowsFeature -Name ('AD-Domain-Services', 'GPMC') -IncludeManagementTools -Restart
 Add-WindowsFeature RSAT-ADDS
