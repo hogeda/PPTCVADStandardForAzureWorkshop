@@ -12,7 +12,5 @@
 | subnetworks | {"value":[{"name":"snet-enterprise","addressPrefix":"10.0.0.0/24"},{"name":"snet-wvd","addressPrefix":"10.0.1.0/24"}],"Count":2} |
 | subnetNameOfAD | snet-enterprise |
 | virtualMachineName | adds01 |
-| adminUsername | pptadmin |
-| adminPassword | WVDPoC#123098! |
-| fileUris | https://raw.githubusercontent.com/hogeda/PPTWvdPoCEnvironment/main/WindowsPowershellScript/ConfigureScheduledTask.ps1 |
-| domainName | lab.hogeda.com |
+| adminUsername | ctxadmin |
+| adminPassword | Citrix12345! |
