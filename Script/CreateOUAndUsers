@@ -1,0 +1,21 @@
+[string]$userNames = 'user1;user2;user3'
+[string]$userPassword = 'Citrix12345!'
+[string]$ouName = 'WVDUsers'
+
+#region create user name array
+[string[]]$userNameArray = $userNames.Split(';')
+[SecureString]$userPassword = ConvertTo-SecureString -String $userPassword -AsPlainText -Force
+#endregion
+
+#region main script
+#region new ou, group
+New-ADOrganizationalUnit -Name $ouName
+$OU = Get-ADOrganizationalUnit -Filter * | Where-Object { $_.Name -eq $ouName }
+
+$dNameADDomain = (Get-ADDomain).DistinguishedName
+$domain = $dNameADDomain.Split(',').Replace('DC=','') -join '.'
+## new user
+foreach ($userName in $userNameArray) {
+    $userPrincipalName = $userName + "@$($domain)"
+    New-ADUser -Name $userName -UserPrincipalName $userPrincipalName -Path $OU -AccountPassword $userPassword -Enabled $true
+}
