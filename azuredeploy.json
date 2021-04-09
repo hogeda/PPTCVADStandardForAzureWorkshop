@@ -180,7 +180,7 @@
                             "primary": true,
                             "privateIPAddressVersion": "IPv4",
                             "publicIPAddress":{
-                                "id": "resourceId('Microsoft.Network/publicIPAddresses', concat(parameters('virtualMachineName'),'-pip'))"
+                                "id": "[resourceId('Microsoft.Network/publicIPAddresses', concat(parameters('virtualMachineName'),'-pip'))]"
                             }
                         }
                     }
